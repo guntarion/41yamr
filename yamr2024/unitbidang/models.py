@@ -14,4 +14,4 @@ class Unit(models.Model):
     bidang = models.ForeignKey(Bidang, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.namaUnit
+        return self.kodeUnit + ' ' + self.namaUnit
